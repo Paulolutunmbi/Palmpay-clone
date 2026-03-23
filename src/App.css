@@ -1,0 +1,1027 @@
+/* PalmPay Clone - App-wide styles */
+.palmpay-purple { color: var(--palmpay-purple); }
+.bg-palmpay-purple { background-color: var(--palmpay-purple); }
+.bg-palmpay-light { background-color: var(--palmpay-bg-light); }
+
+/* ========================
+   NAVBAR
+   ======================== */
+.palmpay-navbar {
+  background: #fff;
+  padding: 0;
+  height: var(--navbar-height);
+  border-bottom: 1px solid #f0f0f0;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.palmpay-navbar .navbar-brand img {
+  height: 36px;
+  width: auto;
+}
+
+.palmpay-navbar .nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333 !important;
+  padding: 0.4rem 0.8rem;
+  transition: color 0.2s;
+}
+
+.palmpay-navbar .nav-link:hover {
+  color: var(--palmpay-purple) !important;
+}
+
+.palmpay-navbar .btn-login {
+  background-color: var(--palmpay-purple);
+  color: #fff !important;
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  transition: background 0.2s;
+}
+.palmpay-navbar .btn-login:hover {
+  background-color: var(--palmpay-purple-dark);
+}
+
+.palmpay-navbar .country-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.palmpay-navbar .country-selector img {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* ========================
+   HERO SECTION
+   ======================== */
+.hero-section {
+  background-color: var(--palmpay-purple);
+  min-height: 520px;
+  padding-top: 80px;
+  padding-bottom: 0;
+  margin-top: var(--navbar-height);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-section .hero-content {
+  padding: 60px 0 0 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hero-section .app-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero-section .app-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.hero-section .app-btn:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.hero-section .app-btn img {
+  height: 26px;
+  width: auto;
+}
+
+.hero-section .app-btn .btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.hero-section .app-btn .btn-text span:first-child {
+  font-size: 10px;
+  color: #555;
+}
+.hero-section .app-btn .btn-text span:last-child {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-section .trust-badges {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+}
+
+.hero-section .trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-section .trust-badge .badge-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.2;
+}
+
+.hero-section .trust-badge img {
+  height: 28px;
+  width: auto;
+}
+
+.hero-section .hero-image-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-section .hero-img {
+  height: 480px;
+  width: auto;
+  object-fit: contain;
+  object-position: bottom;
+  display: block;
+}
+
+/* ========================
+   STATS BAR
+   ======================== */
+.stats-bar {
+  background-color: var(--palmpay-purple);
+  padding: 0;
+}
+
+.stats-bar-inner {
+  background: rgba(80,0,170,0.85);
+  padding: 20px 0;
+}
+
+.stats-bar .stats-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 14px 18px;
+  min-width: 0;
+}
+
+.stats-bar .stats-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.stats-bar .stats-text-block {
+  flex: 1;
+}
+
+.stats-bar .stats-card .stat-main {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.stats-bar .stats-card .stat-sub {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.3;
+}
+
+/* ========================
+   FEATURES SECTION ("Built For People Going Places")
+   ======================== */
+.features-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.features-section .section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--palmpay-purple);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.features-section .section-subtitle {
+  font-size: 1rem;
+  color: var(--palmpay-text-gray);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.feature-card {
+  background-color: var(--palmpay-purple);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 18px;
+  border-bottom: 4px solid var(--palmpay-gold);
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+}
+
+.feature-card .feature-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.feature-card .feature-desc {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.features-section .features-img {
+  width: 100%;
+  max-width: 480px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ========================
+   CONTENT SECTIONS (alternating layout)
+   - FreeTransfers, Savings, DebitCard
+   ======================== */
+.content-section {
+  background-color: var(--palmpay-bg-light);
+  padding: 80px 0;
+}
+
+.content-section.alt {
+  background-color: #EDE8FF;
+}
+
+.content-section .section-heading {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--palmpay-purple);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.content-section .section-body {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.content-section .section-body .highlight {
+  color: var(--palmpay-purple);
+  font-weight: 500;
+}
+
+.content-section .cta-btn {
+  display: inline-block;
+  background-color: var(--palmpay-purple);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 14px 28px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 4px solid var(--palmpay-gold);
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.content-section .cta-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.content-section .content-img {
+  width: 100%;
+  max-width: 500px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .palmpay-navbar .navbar-collapse {
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    border-top: 1px solid #eee;
+  }
+  .palmpay-navbar .nav-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f8f8f8;
+  }
+  .palmpay-navbar .d-flex.align-items-center {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-top: 20px;
+    gap: 16px !important;
+  }
+  
+  .hero-section {
+    padding-top: 48px;
+    min-height: auto;
+  }
+  .hero-section h1 {
+    font-size: 2.1rem;
+  }
+  .hero-section .hero-img {
+    height: 340px;
+  }
+  .features-section .section-title {
+    font-size: 1.7rem;
+  }
+  .content-section .section-heading {
+    font-size: 1.7rem;
+  }
+  .content-section .content-img {
+    height: 260px;
+    margin-bottom: 32px;
+  }
+  .stats-bar .stats-card {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --navbar-height: 64px;
+  }
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+  .hero-section .hero-img {
+    height: 280px;
+  }
+  .features-section {
+    padding: 48px 0;
+  }
+  .content-section {
+    padding: 48px 0;
+  }
+}
+
+/* ========================
+   TRUST SECTION ("Your money's safe space")
+   ======================== */
+.trust-section {
+  background-color: #f5f3ff;
+  padding: 80px 0 70px;
+  text-align: center;
+}
+
+.trust-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--palmpay-purple);
+  margin-bottom: 40px;
+}
+
+.trust-badges-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.trust-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trust-badge-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--palmpay-purple);
+  text-align: right;
+  line-height: 1.4;
+}
+
+.trust-badge-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.trust-badge-img.ndic-img {
+  height: 36px;
+}
+
+.trust-badge-divider {
+  width: 1px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+.trust-pillars-row {
+  border-top: 1px solid #ddd;
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.trust-pillar {
+  position: relative;
+  padding: 0 32px;
+}
+
+.trust-pillar + .trust-pillar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.trust-pillar-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--palmpay-purple);
+  margin-bottom: 12px;
+}
+
+.trust-pillar-desc {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.7;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* ========================
+   REVIEWS SECTION ("Loved by 40 Million Users")
+   ======================== */
+.reviews-section {
+  background-color: #ddb8f5;
+  padding: 70px 0 60px;
+  text-align: center;
+}
+
+.reviews-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--palmpay-purple);
+  margin-bottom: 16px;
+}
+
+.reviews-subtitle {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.reviews-cards-row {
+  margin-bottom: 40px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 28px 24px;
+  text-align: left;
+  height: 100%;
+  box-shadow: 0 2px 16px rgba(100, 40, 180, 0.08);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.review-avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review-avatar-initial {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #6b21a8;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.review-meta {
+  flex: 1;
+}
+
+.review-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.review-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-stars {
+  color: #f5a623;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.review-text {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.reviews-app-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.reviews-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.reviews-store-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.reviews-store-btn.black-btn {
+  background: #111;
+  color: #fff;
+}
+
+.store-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.store-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.store-label {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.store-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ========================
+   RESPONSIVE — New Sections
+   ======================== */
+@media (max-width: 991.98px) {
+  .trust-title,
+  .reviews-title {
+    font-size: 1.8rem;
+  }
+  .trust-pillar + .trust-pillar::before {
+    display: none;
+  }
+  .trust-pillar {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .trust-section,
+  .reviews-section {
+    padding: 48px 0;
+  }
+  .trust-badges-row {
+    gap: 20px;
+  }
+  .reviews-store-btn {
+    padding: 10px 20px;
+  }
+}
+
+/* ========================
+   APP DOWNLOAD SECTION
+   ======================== */
+.app-download-section {
+  background-color: #f5f3ff;
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.app-download-phone {
+  width: 100%;
+  max-width: 380px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 12px 40px rgba(100, 40, 200, 0.15));
+}
+
+.app-download-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--palmpay-purple);
+  line-height: 1.3;
+  margin-bottom: 36px;
+}
+
+.app-download-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.app-dl-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.app-dl-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.app-dl-btn.black-btn {
+  background: #111;
+  color: #fff;
+}
+
+.app-dl-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.app-dl-icon.apple {
+  font-size: 1.7rem;
+}
+
+.app-dl-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.app-dl-label {
+  font-size: 0.68rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.app-dl-store {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ========================
+   JOIN BANNER SECTION
+   ======================== */
+.join-banner-section {
+  background: linear-gradient(135deg, #4c0fbf 0%, #6a0dad 50%, #2d0077 100%);
+  padding: 28px 0;
+}
+
+.join-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.join-banner-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.join-banner-text strong {
+  font-weight: 900;
+}
+
+.join-banner-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.join-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.join-store-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.join-store-btn.outline-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+}
+
+.join-store-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.join-store-icon.apple {
+  font-size: 1.6rem;
+}
+
+.join-store-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.join-store-label {
+  font-size: 0.65rem;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+.join-store-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* ========================
+   FOOTER
+   ======================== */
+.palmpay-footer {
+  background-color: #1a1a2e;
+  padding: 56px 0 0;
+  color: #ccc;
+}
+
+.footer-logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-badge-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 160px;
+}
+
+.footer-badge-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-col-heading {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+  line-height: 1.4;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-link.highlight {
+  color: var(--palmpay-purple);
+}
+
+.footer-link.highlight:hover {
+  color: #a855f7;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-social-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  padding: 28px 0 8px;
+}
+
+.footer-social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.footer-social-icon:hover {
+  border-color: var(--palmpay-purple);
+  color: #fff;
+  background: var(--palmpay-purple);
+}
+
+.footer-copyright {
+  font-size: 0.82rem;
+  color: #888;
+  padding: 12px 0 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-palmpay-name {
+  color: var(--palmpay-purple);
+  font-weight: 600;
+}
+
+.footer-disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px 0 32px;
+}
+
+/* ========================
+   RESPONSIVE — Round 3 Sections
+   ======================== */
+@media (max-width: 991.98px) {
+  .app-download-heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .app-download-btns {
+    justify-content: center;
+  }
+  .join-banner-text {
+    font-size: 1.2rem;
+  }
+  .join-banner-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-social-row {
+    justify-content: center;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .app-download-section {
+    padding: 48px 0;
+  }
+  .app-download-phone {
+    max-width: 280px;
+    margin-bottom: 32px;
+  }
+  .join-banner-section {
+    padding: 36px 0;
+  }
+  .palmpay-footer {
+    padding-top: 40px;
+  }
+  .footer-badge-box {
+    max-width: 130px;
+  }
+}

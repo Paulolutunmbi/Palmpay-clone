@@ -1,0 +1,45 @@
+/* PalmPay Clone - Global Reset & Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --palmpay-purple: #6600CC;
+  --palmpay-purple-dark: #4B0099;
+  --palmpay-purple-light: #E8E0FF;
+  --palmpay-bg-light: #EEE9FF;
+  --palmpay-gold: #F5A623;
+  --palmpay-text-dark: #1a1a2e;
+  --palmpay-text-gray: #555;
+  --navbar-height: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #fff;
+  color: var(--palmpay-text-dark);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border: none;
+  min-height: 100svh;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
