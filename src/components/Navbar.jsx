@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/image.png';
 import nigeriaFlag from '../assets/images/NG.png';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="palmpay-navbar navbar navbar-expand-lg">
       <div className="container">
@@ -15,17 +21,16 @@ const Navbar = () => {
         <button
           className="navbar-toggler border-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={toggleMenu}
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Nav Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto gap-1">
             <li className="nav-item">
               <a className="nav-link" href="#">Company</a>
